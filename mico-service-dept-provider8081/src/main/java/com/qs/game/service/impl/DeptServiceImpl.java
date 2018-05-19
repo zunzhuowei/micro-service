@@ -1,8 +1,8 @@
-package com.qs.game.dao.service.impl;
+package com.qs.game.service.impl;
 
-import com.qs.game.dao.dao.IDeptDao;
-import com.qs.game.dao.service.IDeptService;
+import com.qs.game.dao.IDeptDao;
 import com.qs.game.entity.Dept;
+import com.qs.game.service.IDeptService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

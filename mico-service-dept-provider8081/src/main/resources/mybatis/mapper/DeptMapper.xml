@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.qs.game.dao.dao.IDeptDao">
+<mapper namespace="com.qs.game.dao.IDeptDao">
 
 	<select id="findById" resultType="com.qs.game.entity.Dept" parameterType="long">
 		select id,name,db_source from dept where id=#{id};

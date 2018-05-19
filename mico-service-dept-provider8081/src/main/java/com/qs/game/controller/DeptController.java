@@ -1,7 +1,7 @@
-package com.qs.game.dao.controller;
+package com.qs.game.controller;
 
-import com.qs.game.dao.service.IDeptService;
 import com.qs.game.entity.Dept;
+import com.qs.game.service.IDeptService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -33,6 +33,7 @@ public class DeptController {
 
     @PostMapping("/add")
     public Object add(Dept dept) {
+        System.out.println("provider ---  dept = " + dept);
         return deptService.addDept(dept);
     }
 

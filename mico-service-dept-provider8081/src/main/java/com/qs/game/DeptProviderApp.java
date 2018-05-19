@@ -1,4 +1,4 @@
-package com.qs.game.dao;
+package com.qs.game;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DeptProviderApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(DeptProviderApp.class);
-    }
+        SpringApplication.run(DeptProviderApp.class, args);
+}
 
 }

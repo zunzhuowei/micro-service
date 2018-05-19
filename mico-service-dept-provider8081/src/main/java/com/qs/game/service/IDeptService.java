@@ -1,4 +1,4 @@
-package com.qs.game.dao.service;
+package com.qs.game.service;
 
 import com.qs.game.entity.Dept;
 

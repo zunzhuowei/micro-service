@@ -1,4 +1,4 @@
-package com.qs.game.dao.dao;
+package com.qs.game.dao;
 
 import com.qs.game.entity.Dept;
 import org.apache.ibatis.annotations.Mapper;
