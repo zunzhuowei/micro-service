@@ -2,4 +2,8 @@ server:
   port: 80
 spring:
   application:
-    name: deptConsumer
+    name: micro-servicecloud-dept-consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka/

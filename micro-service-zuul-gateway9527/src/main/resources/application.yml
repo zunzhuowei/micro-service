@@ -1,0 +1,24 @@
+server:
+  port: 9527
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka/
+spring:
+  application:
+    name: zuul-server
+
+#zuul.routes.userservice.path=/user/**
+#zuul.routes.userservice.strPrefix=true
+#zuul.routes.userservice.url=http://localhost:9001/user
+#zuul.routes.orgservice.path=/org/**
+#zuul.routes.orgservice.strPrefix=true
+#zuul.routes.orgservice.url=http://localhost:9002/org
+
+zuul:
+  routes:
+    micro-servicecloud-dept-consumer:
+      path: /consumer/**
+      strPrefix: true
+      url: http://127.0.0.1:80/consumer

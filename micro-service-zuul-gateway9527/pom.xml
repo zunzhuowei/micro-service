@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>micro-service-eureka-server</artifactId>
+    <artifactId>micro-service-zuul-gateway9527</artifactId>
 
 
 </project>

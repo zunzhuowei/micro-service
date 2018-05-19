@@ -1,0 +1,15 @@
+server:
+  port: 7001
+
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    register-with-eureka: false # 是否要注册到服务器端，因为此处为Eureka Server，所以设定为false
+    fetch-registry: false # 是否从服务器端取得注册信息，因为此处为Eureka Server，所以设定为false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+spring:
+  application:
+    name: eureka-server
+
