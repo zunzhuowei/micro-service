@@ -21,7 +21,7 @@
         <dependency>
             <groupId>com.qs.game</groupId>
             <version>0.0.1-SNAPSHOT</version>
-            <artifactId>mico-service-dept-provider8081</artifactId>
+            <artifactId>micro-service-dept-provider8081</artifactId>
         </dependency>
     </dependencies>
 
