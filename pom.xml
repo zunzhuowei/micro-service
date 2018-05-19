@@ -13,8 +13,9 @@
     <modules>
         <module>mico-service-api</module>
         <module>micro-service-entity</module>
-        <module>micro-service-dept-provider8081</module>
+        <module>micro-service-dept-provider8001</module>
         <module>micro-service-dept-consumer80</module>
+        <module>micro-service-eureka-server</module>
     </modules>
 
 

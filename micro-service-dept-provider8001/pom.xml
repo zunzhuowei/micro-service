@@ -9,19 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mico-service-api</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>micro-service-dept-provider8001</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>com.qs.game</groupId>
             <version>0.0.1-SNAPSHOT</version>
             <artifactId>micro-service-entity</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qs.game</groupId>
-            <version>0.0.1-SNAPSHOT</version>
-            <artifactId>micro-service-dept-provider8001</artifactId>
         </dependency>
     </dependencies>
 
