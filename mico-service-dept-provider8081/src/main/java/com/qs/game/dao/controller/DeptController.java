@@ -5,6 +5,9 @@ import com.qs.game.entity.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
  * Created by zun.wei on 2018/5/19.
  * To change this template use File|Default Setting
@@ -33,5 +36,13 @@ public class DeptController {
         return deptService.addDept(dept);
     }
 
+    @GetMapping("/list/{start}/{end}")
+    public Object getListByLimit(@PathVariable("start") long start,
+                                 @PathVariable("end") long end) {
+        Map<String, Object> parameters = new ConcurrentHashMap<>();
+        parameters.put("start", start);
+        parameters.put("end", end);
+        return deptService.findListByLimit(parameters);
+    }
 
 }

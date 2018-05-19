@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by zun.wei on 2018/5/19.
@@ -33,6 +34,11 @@ public class DeptServiceImpl implements IDeptService {
     @Override
     public int addDept(Dept dept) {
         return deptDao.addDept(dept);
+    }
+
+    @Override
+    public List<Dept> findListByLimit(Map<String, Object> parameters) {
+        return deptDao.findListByLimit(parameters);
     }
 
 }

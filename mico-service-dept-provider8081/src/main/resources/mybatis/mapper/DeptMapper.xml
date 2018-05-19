@@ -16,6 +16,10 @@
 		INSERT INTO dept(name,db_source) VALUES(#{name},DATABASE());
 	</insert>
 
+	<select id="findListByLimit"  resultType="com.qs.game.entity.Dept" parameterType="map">
+		select id,name,db_source from dept limit #{start},#{end};
+	</select>
+
 </mapper>
  
 

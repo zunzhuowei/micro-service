@@ -4,6 +4,7 @@ import com.qs.game.entity.Dept;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by zun.wei on 2018/5/19.
@@ -16,6 +17,8 @@ public interface IDeptDao {
     Dept findById(long id);
 
     List<Dept> findAll();
+
+    List<Dept> findListByLimit(Map<String, Object> parameters);
 
     int addDept(Dept dept);
 

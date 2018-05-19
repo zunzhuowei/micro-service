@@ -3,6 +3,7 @@ package com.qs.game.dao.service;
 import com.qs.game.entity.Dept;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by zun.wei on 2018/5/19.
@@ -16,5 +17,7 @@ public interface IDeptService {
     List<Dept> getDeptAllByList();
 
     int addDept(Dept dept);
+
+    List<Dept> findListByLimit(Map<String, Object> parameters);
 
 }
