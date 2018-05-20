@@ -1,22 +1,22 @@
 package com.qs.game;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
- * Created by zun.wei on 2018/5/19.
+ * Created by zun.wei on 2018/5/20.
  * To change this template use File|Default Setting
  * |Editor|File and Code Templates|Includes|File Header
  */
 @SpringBootApplication
 @EnableEurekaClient
-@EnableDiscoveryClient //暴露自己给eureka ,给其他服务调用
-public class DeptProviderApp {
+@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
+public class MicroServiceApiApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(DeptProviderApp.class, args);
-}
-
+        SpringApplication.run(MicroServiceApiApp.class, args);
+    }
 }

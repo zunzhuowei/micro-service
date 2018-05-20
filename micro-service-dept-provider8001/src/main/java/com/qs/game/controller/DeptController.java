@@ -5,6 +5,7 @@ import com.qs.game.service.IDeptService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -23,7 +24,8 @@ public class DeptController {
 
     @GetMapping("/list")
     public Object getAllDeptByList() {
-        return deptService.getDeptAllByList();
+        List<Dept> depts = deptService.getDeptAllByList();
+        return depts;
     }
 
     @GetMapping("/get/{id}")
