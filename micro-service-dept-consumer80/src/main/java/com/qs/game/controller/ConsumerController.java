@@ -60,11 +60,19 @@ public class ConsumerController {
         return restTemplate.getForObject(URL_PROFIX + "/dept/list/" + start + "/" + end, List.class);
     }
 
+    /**
+     * 获取发现的服务
+     * @return
+     */
     @GetMapping("/dept/get/service")
     public Object getService() {
         List<String> services = discoveryClient.getServices();
         List<ServiceInstance> instanceList = discoveryClient.getInstances(services.get(0));
-        return instanceList.get(0);
+        ServiceInstance si = instanceList.get(0);
+        String uri = si.getUri().toString();
+        String host = si.getHost();
+        int port = si.getPort();
+        return uri + " -- " + host + " -- " + port;
     }
 
 }
