@@ -14,8 +14,13 @@
     <dependencies>
         <dependency>
             <groupId>com.qs.game</groupId>
-            <version>${project.version}</version>
             <artifactId>micro-service-entity</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+            <version>${spring.cloud.version}</version>
         </dependency>
     </dependencies>
 

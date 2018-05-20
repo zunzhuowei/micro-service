@@ -11,5 +11,22 @@
 
     <artifactId>micro-service-zuul-gateway9527</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zuul</artifactId>
+            <version>${spring.cloud.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+            <version>${spring.cloud.version}</version>
+        </dependency>
+    <!-- <dependency>
+              <groupId>org.springframework.cloud</groupId>
+              <artifactId>spring-cloud-starter-ribbon</artifactId>
+              <version>${spring.cloud.version}</version>
+          </dependency>-->
+    </dependencies>
 
 </project>
