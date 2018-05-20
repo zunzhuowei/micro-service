@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>com.qs.game</groupId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${project.version}</version>
             <artifactId>micro-service-entity</artifactId>
         </dependency>
     </dependencies>
