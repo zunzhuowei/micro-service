@@ -24,7 +24,8 @@ import java.util.List;
 @RequestMapping(value = "/consumer",produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 public class ConsumerController {
 
-    private static final String URL_PROFIX = "http://127.0.0.1:8001";
+    //private static final String URL_PROFIX = "http://127.0.0.1:8001";
+    private static final String URL_PROFIX = "http://MICRO-SERVICECLOUD-DEPT";
 
     @Autowired
     private RestTemplate restTemplate;
