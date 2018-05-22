@@ -1,5 +1,7 @@
 package com.qs.game.config;
 
+import com.netflix.loadbalancer.IRule;
+import com.netflix.loadbalancer.RandomRule;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,6 +20,12 @@ public class ConfigBean {
     @LoadBalanced//spring cloud ribbon 是基于Netflix ribbon实现的一套客户端负载均衡工具
     public RestTemplate getRestTemplate() {
         return new RestTemplate();
+    }
+
+
+    @Bean//修改负载均衡为随机算法
+    public IRule myRule() {
+        return new RandomRule();
     }
 
 }
