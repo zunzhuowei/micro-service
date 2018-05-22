@@ -19,6 +19,8 @@
         <module>micro-service-eureka-server7002</module>
         <module>micro-service-zuul-gateway9527</module>
         <module>micro-service-eureka-server7003</module>
+        <module>micro-service-dept-provider8002</module>
+        <module>micro-service-dept-provider8003</module>
     </modules>
 
 

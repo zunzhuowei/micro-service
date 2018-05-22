@@ -14,6 +14,7 @@ import org.springframework.web.client.RestTemplate;
 public class ConfigBean {
 
     @Bean
+    //默认轮询方式
     @LoadBalanced//spring cloud ribbon 是基于Netflix ribbon实现的一套客户端负载均衡工具
     public RestTemplate getRestTemplate() {
         return new RestTemplate();
