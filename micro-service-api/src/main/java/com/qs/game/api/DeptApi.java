@@ -1,6 +1,6 @@
 package com.qs.game.api;
 
-import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
@@ -9,16 +9,13 @@ import org.springframework.web.bind.annotation.PathVariable;
  * To change this template use File|Default Setting
  * |Editor|File and Code Templates|Includes|File Header
  */
-@EnableFeignClients(basePackages = {"com.qs.game"})
+@FeignClient(name="MICRO-SERVICECLOUD-DEPT")
 public interface DeptApi {
 
-    @GetMapping("/consumer/dept/get/list")
+    @GetMapping("/dept/list")
     Object getListByCumsumerService();
 
-    @GetMapping("/consumer/dept/get/{id}")
+    @GetMapping("/dept/get/{id}")
     Object getDept(@PathVariable("id") long id);
-
-    @GetMapping("/dept/list")
-    Object getAllDeptByList();
 
 }

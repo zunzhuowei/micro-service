@@ -21,6 +21,7 @@
         <module>micro-service-eureka-server7003</module>
         <module>micro-service-dept-provider8002</module>
         <module>micro-service-dept-provider8003</module>
+        <module>micro-service-dept-consumer-feign80</module>
     </modules>
 
 

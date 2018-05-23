@@ -1,0 +1,17 @@
+server:
+  port: 80
+spring:
+  application:
+    name: micro-servicecloud-dept-consumer-feign
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/
+  instance:
+      instance-id: dept-consumer-feign80
+      prefer-ip-address: true
+info:
+  app.name: micro-servicecloud-dept-consumer-feign
+  company.name: qs.game
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
