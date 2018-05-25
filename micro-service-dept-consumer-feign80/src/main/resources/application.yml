@@ -15,3 +15,8 @@ info:
   company.name: qs.game
   build.artifactId: $project.artifactId$
   build.version: $project.version$
+
+# 服务降级熔断
+feign:
+  hystrix:
+    enabled: true

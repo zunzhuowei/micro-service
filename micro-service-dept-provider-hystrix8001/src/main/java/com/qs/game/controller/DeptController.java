@@ -31,7 +31,8 @@ public class DeptController {
     }
 
     @GetMapping("/get/{id}")
-    @HystrixCommand(fallbackMethod = "getDeptFallback")//发生异常回调此方法。
+    //发生异常回调此方法。（此为单独处理），依赖服务端，应该把降级放到客户端中做。
+    @HystrixCommand(fallbackMethod = "getDeptFallback")
     public Object getDept(@PathVariable("id") long id) {
         Dept dept = deptService.getDeptById(id);
         if (Objects.nonNull(dept))
