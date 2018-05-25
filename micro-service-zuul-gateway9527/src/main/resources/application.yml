@@ -25,3 +25,10 @@ zuul:
       path: /consumer/**
       strPrefix: true
       url: http://127.0.0.1:80/consumer
+
+info:
+  app.name: zuul-server-9527
+  company.name: qs.game
+  build.artifactId: "@project.artifactId@"
+  build.version: "@project.version@"
+  spring-boot-version: "@project.parent.version@"

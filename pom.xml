@@ -23,6 +23,7 @@
         <module>micro-service-dept-provider8003</module>
         <module>micro-service-dept-consumer-feign80</module>
         <module>micro-service-dept-provider-hystrix8001</module>
+        <module>micro-service-hystrixDashboard9001</module>
     </modules>
 
 
@@ -92,6 +93,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring.cloud.version}</version>
         </dependency>
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>

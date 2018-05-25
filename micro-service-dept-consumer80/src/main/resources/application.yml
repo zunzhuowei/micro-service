@@ -13,5 +13,6 @@ eureka:
 info:
   app.name: micro-servicecloud-dept-consumer
   company.name: qs.game
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
+  build.artifactId: "@project.artifactId@"
+  build.version: "@project.version@"
+  spring-boot-version: "@project.parent.version@"
