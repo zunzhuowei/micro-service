@@ -1,0 +1,10 @@
+spring:
+  application:
+      name: micro-servicecloud-config-client
+  cloud:
+      config:
+          uri: http://127.0.0.1:3344
+          name: application-config-client-test
+          label: master
+          profile: dev
+

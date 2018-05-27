@@ -1,0 +1,17 @@
+server:
+  port: 3355
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/
+  instance:
+      instance-id: micro-servicecloud-config-client3355
+      prefer-ip-address: true
+
+info:
+  app.name: micro-servicecloud-config-client
+  company.name: qs.game
+  build.artifactId: "@project.artifactId@"
+  build.version: "@project.version@"
+  spring-boot-version: "@project.parent.version@"

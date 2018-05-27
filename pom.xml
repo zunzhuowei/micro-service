@@ -24,6 +24,8 @@
         <module>micro-service-dept-consumer-feign80</module>
         <module>micro-service-dept-provider-hystrix8001</module>
         <module>micro-service-hystrixDashboard9001</module>
+        <module>micro-service-config-server3344</module>
+        <module>micro-service-config-client3355</module>
     </modules>
 
 
