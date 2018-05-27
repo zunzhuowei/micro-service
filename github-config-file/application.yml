@@ -1,11 +1,25 @@
-server:
-  port: 3344
+spring:
+  profiles:
+    active:
+    - dev
+
+---
 
 spring:
+  profiles:
   application:
-    name:  microservicecloud-config
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/zunzhuowei/micro-service.git #GitHub上面的git仓库名字
+    name: micro-service-config-dev
+
+---
+
+spring:
+  profiles:
+  application:
+    name: micro-service-config-test
+
+---
+
+spring:
+  profiles:
+  application:
+    name: micro-service-config-prod
