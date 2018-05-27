@@ -29,11 +29,11 @@ spring:
 server:
   port: 8004
 
-mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
-  type-aliases-package: com.qs.game.entiy    # 所有Entity别名类所在包
-  mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
+#mybatis:
+#  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
+#  type-aliases-package: com.qs.game.entiy    # 所有Entity别名类所在包
+#  mapper-locations:
+#  - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
 
 eureka:
   client:
@@ -66,12 +66,6 @@ spring:
 server:
   port: 8005
 
-mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
-  type-aliases-package: com.qs.game.entiy    # 所有Entity别名类所在包
-  mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
-
 eureka:
   client:
     service-url:
@@ -103,12 +97,6 @@ spring:
          test-while-idle: false
 server:
   port: 8006
-
-mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
-  type-aliases-package: com.qs.game.entiy    # 所有Entity别名类所在包
-  mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
 
 eureka:
   client:
