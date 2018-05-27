@@ -6,20 +6,20 @@ spring:
 ---
 
 spring:
-  profiles:
+  profiles: dev
   application:
     name: micro-service-config-dev
 
 ---
 
 spring:
-  profiles:
+  profiles: test
   application:
     name: micro-service-config-test
 
 ---
 
 spring:
-  profiles:
+  profiles: prod
   application:
     name: micro-service-config-prod
