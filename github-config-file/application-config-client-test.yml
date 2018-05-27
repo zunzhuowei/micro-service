@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active:
+    - dev
+
+---
+
+spring:
+  profiles: dev
+  application:
+    name: micro-service-config-dev-client
+
+---
+
+spring:
+  profiles: test
+  application:
+    name: micro-service-config-test-client
+
+---
+
+spring:
+  profiles: prod
+  application:
+    name: micro-service-config-prod-client
