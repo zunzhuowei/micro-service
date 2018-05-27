@@ -1,0 +1,20 @@
+spring:
+  cloud:
+      config:
+          uri: http://127.0.0.1:3344
+          name: application-dept-config8004yml  # 对应github 中的 yml文件名。
+          label: master
+          profile: prod
+
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
+  type-aliases-package: com.qs.game.entiy    # 所有Entity别名类所在包
+  mapper-locations:
+  - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
+
+info:
+  app.name: "@project.build.finalName@"
+  company.name: qs.game
+  build.artifactId: "@project.artifactId@"
+  build.version: "@project.version@"
+  spring-boot-version: "@project.parent.version@"

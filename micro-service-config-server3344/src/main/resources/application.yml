@@ -9,7 +9,7 @@ spring:
       server:
         git:
           uri: https://github.com/zunzhuowei/micro-service.git #GitHub上面的git仓库名字
-          searchPaths: github-config-file
+          searchPaths: github-config-file  # 查找git仓库对应的目录
           default-label: master
 
 eureka:
