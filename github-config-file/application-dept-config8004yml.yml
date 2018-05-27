@@ -42,16 +42,6 @@ eureka:
   instance:
     instance-id: dept-provider8004
     prefer-ip-address: true
-info:
-  app.name: "@project.name@"
-  company.name: qs.game
-  build.artifactId: "@project.artifactId@"
-  build.version: "@project.version@"
-  spring-boot-version: "@project.parent.version@"
-
-
-
-
 
 ---
 
@@ -89,16 +79,6 @@ eureka:
   instance:
     instance-id: dept-provider8005
     prefer-ip-address: true
-info:
-  app.name: "@project.name@"
-  company.name: qs.game
-  build.artifactId: "@project.artifactId@"
-  build.version: "@project.version@"
-  spring-boot-version: "@project.parent.version@"
-
-
-
-
 
 
 ---
@@ -137,9 +117,3 @@ eureka:
   instance:
     instance-id: dept-provider8006
     prefer-ip-address: true
-info:
-  app.name: "@project.name@"
-  company.name: qs.game
-  build.artifactId: "@project.artifactId@"
-  build.version: "@project.version@"
-  spring-boot-version: "@project.parent.version@"
